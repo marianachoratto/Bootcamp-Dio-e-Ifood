@@ -22,7 +22,7 @@ class Pessoa{ // classe
     } 
 }
 
-// const maria = new Pessoa();
+//  const maria = new Pessoa();
 // maria.nome = 'Maria do Carmo';
 // maria.idade = 35;
 
@@ -33,26 +33,28 @@ class Pessoa{ // classe
 // console.log(maria)
 // console.log(joao)
 
-//maria.descrever()
+// maria.descrever()
 
-//const paulo = new Pessoa('Paulo Souza', 33)
+const paulo = new Pessoa('Paulo Souza', 33)
 
-//console.log(paulo)
+console.log(paulo)
 
-function compararPessoas(p1, p2){ //NOTE! É uma função recebendo um objeto como parâmetro
-    if (p1.idade > p2.idade) {
-        console.log(`${p1.nome} é mais velho que ${p2.nome}`)
-    } else if (p2.idade > p1.idade){
-        console.log(`${p2.nome} é mais velho que ${p1.nome}`)
-    } else {
-        console.log(`${p1.nome} é da mesma idade que ${p2.nome}`)
-    }
-}
+// function compararPessoas(p1, p2){ //NOTE! É uma função recebendo um objeto como parâmetro
+//     if (p1.idade > p2.idade) {
+//         console.log(`${p1.nome} é mais velho que ${p2.nome}`)
+//     } else if (p2.idade > p1.idade){
+//         console.log(`${p2.nome} é mais velho que ${p1.nome}`)
+//     } else {
+//         console.log(`${p1.nome} é da mesma idade que ${p2.nome}`)
+//     }
+// }
 
-const maria = new Pessoa('Maria do Carmo', 35);
+let maria = new Pessoa('Maria do Carmo', 35);
 
-const joao = new Pessoa('João das Neves', 28);
+let joao = new Pessoa('João das Neves', 28);
 
-compararPessoas(maria, joao)
+// compararPessoas(maria, joao)
 
 // Note! Nós temos uma classe que só é utilizada uma vez, em seguida temos outras funções que estão utilizando um atributo dessa classe. Tudo com muito menos código 
+
+console.log(Pessoa)

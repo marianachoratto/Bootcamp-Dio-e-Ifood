@@ -7,7 +7,7 @@ class carros {
 
     constructor (marca, cor, gastoMedioCombustivelPorKm){ // se esses atributos são obrigatórios esses parâmetros tem que passar pelo construtor, não entendi muito bem o motivo
         
-        this.marca = marca //NOTE! O 1 marca é um objeto, já o 2 marca é uma variável local que está sendo passada. O que vai aparecer no console é o objeto
+        this.marca = marca //NOTE! O 1 marca é um objeto, já o 2 marca é um parâmetro local que está sendo passado. O que vai aparecer no console é o objeto
         this.cor = cor 
         this.gastoMedioCombustivelPorKm = gastoMedioCombustivelPorKm
 
@@ -21,7 +21,8 @@ class carros {
 }
 
 const carro1 = new carros('Uno', 'branco', 12)
-
 console.log(carro1)
 
+const carro2 = new carros('fiat', 'prata', 8)
+console.log(carro2)
 
