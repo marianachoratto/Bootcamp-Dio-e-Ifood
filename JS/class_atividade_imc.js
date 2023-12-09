@@ -24,7 +24,7 @@ class pessoa {
   }
 }
 
-let jose = new pessoa();
+let jose = new pessoa( );
 jose.nome = "jose";
 jose.peso = 70;
 jose.altura = 1.75;
