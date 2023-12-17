@@ -7,7 +7,7 @@ const state = {
     },
     values: {
         timerId: null,
-        gameVelocity: 1000,
+        gameVelocity: 930,
         hitPosition: 0,
         result: 0,
         currentTime: 60,
