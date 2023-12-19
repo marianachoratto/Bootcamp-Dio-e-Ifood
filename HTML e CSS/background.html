@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{margin: 0;}
+
+        code{
+            font-size: larger;
+            font-weight: bolder;
+        }
+
+        div{
+            height: 300px;
+            width: 300px;
+            border: 5px dashed red;
+            background-image: url(imagens/wallpaper002.jpg);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            padding: 10px;
+        }
+
+        #padding-box{
+            background-origin: padding-box;
+        }
+
+        #border-box{
+            background-origin: border-box;
+        }
+
+        #content-box{
+            background-origin:content-box ;
+        }
+
+        #xadrez{
+            background:
+            radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.15) 30%, rgba(255,255,255,.3) 32%, rgba(255,255,255,0) 33%) 0 0,
+            radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.3) 13%, rgba(255,255,255,0) 14%) 0 0,
+            radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 17%, rgba(255,255,255,.43) 19%, rgba(255,255,255,0) 20%) 0 110px,
+            radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) -130px -170px,
+            radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) 130px 370px,
+            radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.2) 13%, rgba(255,255,255,0) 14%) 0 0,
+            linear-gradient(45deg, #343702 0%, #184500 20%, #187546 30%, #006782 40%, #0b1284 50%, #760ea1 60%, #83096e 70%, #840b2a 80%, #b13e12 90%, #e27412 100%);
+            background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;
+            background-color: #840b2a;
+
+            background-blend-mode: luminosity;
+        }
+    </style>
+</head>
+<body>
+    <code>Background-origin: padding-box (padrão)</code>
+    <p>Ela vai ocupar a área do padding</p>
+    <div id="padding-box"></div><br>
+
+    <code>Background-origin: border-box</code>
+    <p>Ela vai ocupar até a borda</p>
+    <div id="border-box"></div><br>
+
+    <code>Background-origin: content-box</code>
+    <p>Ela não vai ocupar nem a borda nem o padding</p>
+    <div id="content-box"></div><br>
+
+    <div id="xadrez">
+        
+    </div>
+</body>
+</html>
