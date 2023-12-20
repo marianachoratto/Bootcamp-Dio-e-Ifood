@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       #lista01 ul{background-color: antiquewhite;}
+
+        br ~ a { background-color: rgba(226, 43, 180, 0.589);}
+
+        div ~ p{ background-color: aqua;}
+        /* Note! Não está dentro da div */
+
+    </style>
+</head>
+<body> 
+    <h1>Agrupamento de seletores</h1>
+    <p class="texto teste">Podemos aplicar as mesmas regras de CSS para vários seletores apenas usando a <strong>vírgula</strong>.</p>
+    <div class="texto">Assim, não precisa ficar copiando e colando código.</div>
+    <ul>
+        <li>Serve para classe e id e tag html, tudo junto</li>
+    </ul>
+    <br><br>
+    <a href="#" id="link-referencia">Clique para ver a documentação</a><br><br>
+    <a href="#" id="link-suporte">Clique para entrar em contato</a><br><br>
+    <a href="#" id="voltar">Voltar</a><br><br>
+    <button id="botão-fechar">Fechar página</button>
+
+    <h1>Combinadores</h1>
+    <p>O combinador indica qual tipo de relação os seletores tem entre si. </p>
+    <p>Estrutura: [SELETOR] [COMBINADOR] [SELETOR] </p>
+
+    <ol>
+        <li>Combinador Descendente: [PAI] espaço [FILHO]</li>
+        <li>Combinador filho: > </li>
+        <li>Combinador irmão adjacente: <strong>+</strong>. Ou seja, a próxima tag. A imediatamente próxima apenas
+        </li>
+        <li>Combinador irmão em geral: ~  . Pode ser o 5º ou 10º irmão de uma tag. Ele pega todos DEPOIS.</li>
+    </ol>
+    <p>Veja o exemplo:</p>
+
+    <div class="verde" id="lista01">Item 1
+    <ul>
+        <li>Subitem A</li>
+        <li>Subitem B</li>
+    </ul>
+    </div>
+    <div class="verde" id="02">Item 2
+    <ul>
+        <li>Subitem A</li>
+        <li>Subitem B</li>
+    </ul>
+    </div>
+    <div class="azul" id="03">Item 3
+    <ul>
+        <li>Subitem A</li>
+        <li>Subitem B</li>
+    </ul>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quo at dolorum odio pariatur voluptatibus inventore officiis quidem fuga. Hic adipisci numquam assumenda harum consectetur atque ad omnis quia vero.</p>
+</body>
+</html>

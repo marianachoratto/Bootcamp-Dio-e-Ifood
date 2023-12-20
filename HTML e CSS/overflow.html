@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        div{
+            border: 5px solid brown;
+            background-color: rgba(255, 166, 0, 0.904);
+            height: 250px;
+            width: 200px;
+            padding: 5px;
+            overflow: auto;
+        }
+
+        @import url('');
+    </style>
+</head>
+<body>
+    <h1>Propriedade overflow</h1>
+    <p>Controla como o conteúdo deve ser exibido caso este ultrapasse os limites do container</p>
+    <p>overflow = transbordar</p>
+    <p>Essa propriedade só funciona se a caixa tiver um tamanho máximo definido</p>
+    <p>Você pode usar o overflow-x ou overflow-y para criar barras de rolagem só nesses eixos.</p>
+
+    <p>Existem 4 valores que você pode dar pra essa Propriedade</p>
+    <ul>
+        <li><code>overflow: visible.</code>    Ele é ixibido, mesmo que ultrapasse a div</li>
+        <li><code>overflow: hidden.</code>    Acaba a caixa e o texto é cortado</li>
+        <li><code>overflow: scroll.</code>   Cria uma barra de rolagem na caixa </li>
+        <li><code>overflow: auto.</code>    Aparece automaticamente uma barra de rolagem quando o texto ultrapassa o tamanho da caixa</li>
+    </ul>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptatem esse minima fuga blanditiis minus nesciunt mollitia, facere quaerat vero porro obcaecati repellat aperiam! Aliquid exercitationem nam asperiores beatae modi.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt nisi dicta, nihil ad enim nulla! Sint tempore atque temporibus quos quae illo est labore laboriosam! Qui fugit molestias voluptate laboriosam.</p>
+    </div>
+
+</body>
+</html>
